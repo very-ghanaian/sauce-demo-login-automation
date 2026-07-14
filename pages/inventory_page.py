@@ -7,7 +7,7 @@ class InventoryPage(BaseDriver):
         button = self.find("id", self.BACKPACK_ADD_TO_CART_ID)
         button.click()
     
-    def go_to_cart(self):
+    def get_cart_count(self):
         badge = self.find("class name", "shopping_cart_badge")
         return badge.text
     
